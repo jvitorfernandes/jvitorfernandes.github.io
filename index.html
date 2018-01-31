@@ -6,9 +6,11 @@
 -->
 <html>
 	<head>
-		<title>João Vítor Fernandes</title>
+		<title>João Vítor Fernandes | Front-end Developer</title>
+		<meta name="description" content="João Vítor Fernanades is a junior front-end developer, computer science student based in Schertz, Texas.">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="images/favicon.png">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -52,7 +54,6 @@
                         margin-left: 10px;
                     }
                     .hoverImage div{
-                        display: inline-block; 
                         float: right;
                         display: none;
                         position: absolute;
@@ -66,7 +67,7 @@
                         border-radius: 0.35em;
                     }
                     
-                    .work-item:hover .hoverImage div{
+                    .work-item:hover .hoverImage div, .work-item:focus .hoverImage div{
                         display: inline-block;
                     }
                     
@@ -174,7 +175,7 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<p>Feel free to send me a message! I'm open for job offers and freelance work. And if you haven't yet, take a look at my <a href="https://linkedin.com/in/jvitorfernandes/" target="_blank">LinkedIn profile</a>.</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
 								<form id="contactForm">
@@ -216,10 +217,11 @@
                                 margin-bottom: 1rem;
                                 border: 1px solid transparent;
                                 border-radius: .25rem;
-                                transition: opacity 0s ease-in-out;
-                               -moz-transition: opacity 0s ease-in-out;
-                               -webkit-transition: opacity 0s ease-in-out;
+                                transition: opacity 0.15s ease-in-out;
+                               -moz-transition: opacity 0.15s ease-in-out;
+                               -webkit-transition: opacity 0.15s ease-in-out;
                                 display: none;
+                                opacity: 0;
                                 
                             }
                             
@@ -245,6 +247,7 @@
                                 background-color: #d4edda;
                                 border-color: #c3e6cb;
                                 display: block;
+                                opacity: 1;
                             }
                             
                             .error {
@@ -252,6 +255,7 @@
                                 background-color: #f8d7da;
                                 border-color: #f5c6cb;
                                 display: block;
+                                opacity: 1;
                             }
                         </style>
 						<div class="feedback">
@@ -588,7 +592,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-                        <li><a href="linkedin.com/in/jvitorfernandes/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://linkedin.com/in/jvitorfernandes/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					    <li><a href="https://github.com/jvitorfernandes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://behance.net/jvitorfernandes" target="_blank" class="icon fa-behance"><span class="label">Behance</span></a></li>
 					</ul>
