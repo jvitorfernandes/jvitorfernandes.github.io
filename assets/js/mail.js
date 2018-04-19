@@ -19,7 +19,8 @@ $(document).ready(function(){
                 $('.feedbackMessage').empty();
             },
             success: function(result, status) { 
-
+                
+                $('.feedback').removeClass('error');
                 $('.feedback').addClass('success');
                 $('.feedbackMessage').text('Thanks for getting in touch! You will soon receive an answer in your email.');
                 
@@ -29,6 +30,7 @@ $(document).ready(function(){
                 
             },
             error: function(result, status){
+                $('.feedback').removeClass('success');
                 $('.feedback').addClass('error');
                 $('.feedbackMessage').text(':( Something went wrong. Try again later or send a direct message to fernandesjvb@gmail.com.');
             }  
